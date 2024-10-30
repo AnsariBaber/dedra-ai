@@ -70,7 +70,7 @@ const Navbar = () => {
                 <FaXTwitter />
               </a>
               <a
-                href="/profile"
+                href="/register"
                 className="block text-2xl px-3 py-2 text-white hover:bg-[#15171A] rounded-md"
               >
                 <IoPersonCircleOutline />
@@ -110,7 +110,7 @@ const Navbar = () => {
             <FaXTwitter />
           </a>
           <a
-            href="/profile"
+            href="/register"
             className="block text-2xl px-3 py-2 text-white hover:bg-[#15171A] rounded-md md:ml-4"
           >
             <IoPersonCircleOutline />

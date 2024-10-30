@@ -4,13 +4,17 @@ import { IoIosAdd } from "react-icons/io"
 import { MdDone } from "react-icons/md"
 import { MdOutlineFileDownload } from "react-icons/md"
 import { RiShareForwardLine } from "react-icons/ri"
+import { MdVideoSettings } from "react-icons/md";
 
 const GenerateVideoData = () => {
   return (
     <div className="bg-[#15171A] text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
+      <div className="flex justify-center py-2 px-1">
+      <MdVideoSettings className="w-6 h-6 mr-1" />
         <h2 className="text-lg font-semibold">Character</h2>
+      </div>
         <div className="flex space-x-2">
           <button className="bg-gray-800 p-1.5 rounded-full hover:bg-gray-700">
             <span className="text-xs">1:1</span>

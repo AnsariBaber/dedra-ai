@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react"
 import { MdDone } from "react-icons/md"
 import { useDropzone } from "react-dropzone"
-import { MdOutlineAudiotrack } from "react-icons/md";
+import { MdOutlineAudiotrack } from "react-icons/md"
 
 const thumbsContainer = {
   display: "flex",
@@ -137,6 +137,21 @@ const AudioData = () => {
   }, [files])
   return (
     <div className="bg-[#15171A] text-white p-6 rounded-lg shadow-lg max-w-lg mx-auto">
+       <div className="flex justify-between my-3">
+        <div className="flex justify-center py-2 px-1">
+        <svg className="w-6 h-6 mr-1" fill="currentColor" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-width="1.571" d="M11 3.928v14.143M14.929 6.286v9.428M18.857 9.428v3.143M7.071 6.286v9.428M3.143 9.428v3.143"></path>
+            </svg>
+            <span className="">Voices</span>
+        </div>
+
+            <button className=" p-1.5 rounded-full">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z" />
+              <path d="M11 6h2v6h-2zM11 15h2v2h-2z" />
+            </svg>
+          </button>
+          </div>
       {/* Tabs */}
       <div className="flex border-b border-gray-700 mb-4">
         <button
@@ -192,31 +207,36 @@ const AudioData = () => {
           <div className="flex justify-between my-3">
             <span className="text-gray-400">Voices</span>
 
-            <button className="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg focus:outline-none">
+            <button className="bg-[#090A0B] hover:bg-gray-700 px-4 py-2 rounded-lg focus:outline-none">
               New voice +
             </button>
           </div>
           <div className="bg-[#090A0B] py-2 px-2 ml-2 rounded-lg flex justify-between items-center">
-  <div className="relative w-44">
-    <select className="bg-gray-700 text-white w-full px-4 py-2 pr-10 rounded-lg appearance-none focus:outline-none">
-      <option>Choose a voice</option>
-      <option>Voice 1</option>
-      <option>Voice 2</option>
-      <option>Voice 3</option>
-    </select>
-    <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-4 h-4 text-gray-400"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </div>
-  </div>
-</div>
+            <div className="relative w-44">
+              <select className="bg-[#15171A] text-white w-full px-4 py-2 pr-10 rounded-lg appearance-none focus:outline-none">
+                <option>Choose a voice</option>
+                <option>Voice 1</option>
+                <option>Voice 2</option>
+                <option>Voice 3</option>
+              </select>
+              <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       )}
 
@@ -228,8 +248,7 @@ const AudioData = () => {
               <section className="container">
                 <div
                   {...getRootProps({
-                    className:
-                      "dropzone ",
+                    className: "dropzone ",
                   })}
                 >
                   <input {...getInputProps()} />
