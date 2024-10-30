@@ -51,7 +51,7 @@ const Navbar = () => {
               Create
             </a>
             <a
-              href="/about"
+              href="/home"
               className="block px-3 py-2 text-white hover:bg-[#15171A] rounded-md text-xl mb-4"
             >
               Stylize
@@ -88,7 +88,7 @@ const Navbar = () => {
             Create
           </a>
           <a
-            href="/about"
+            href="/home"
             className="block px-3 py-2 text-white hover:bg-[#15171A] rounded-md md:ml-4"
           >
             Stylize

@@ -40,14 +40,14 @@ const GenerateVideoData = () => {
       {/* Action Buttons */}
       <div className="flex justify-around mb-4">
         <div className="flex justify-around mb-4">
-          <button className="bg-[#090A0B] p-2 rounded-full flex items-center justify-center focus:outline-none">
-            <MdOutlineFileDownload className="w-5 h-5 m-2" />
+          <button className="bg-[#090A0B]  py-2 px-4 rounded-full shadow-md flex items-center justify-center focus:outline-none">
+            <MdOutlineFileDownload className="w-5 h-5 m-1" />
             <span>Download</span>
           </button>
         </div>
         <div className="flex justify-around mb-4">
-          <button className="bg-[#090A0B] p-2 rounded-full flex items-center justify-center focus:outline-none">
-            <RiShareForwardLine className="w-5 h-5 m-2" />
+          <button className="bg-[#090A0B] py-2 px-4 rounded-full shadow-md flex items-center justify-center focus:outline-none">
+            <RiShareForwardLine className="w-5 h-5 m-1" />
             <span>Share</span>
           </button>
         </div>

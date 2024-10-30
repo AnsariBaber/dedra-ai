@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import { MdDone } from "react-icons/md"
 import { useDropzone } from "react-dropzone"
+import { MdOutlineAudiotrack } from "react-icons/md";
 
 const thumbsContainer = {
   display: "flex",
@@ -195,14 +196,27 @@ const AudioData = () => {
               New voice +
             </button>
           </div>
-          <div className="bg-[#090A0B] p-4 rounded-lg flex justify-between items-center">
-            <select className="bg-gray-700 text-white px-4 py-2 rounded-lg focus:outline-none">
-              <option>Choose a voice</option>
-              <option>Voice 1</option>
-              <option>Voice 2</option>
-              <option>Voice 3</option>
-            </select>
-          </div>
+          <div className="bg-[#090A0B] py-2 px-2 ml-2 rounded-lg flex justify-between items-center">
+  <div className="relative w-44">
+    <select className="bg-gray-700 text-white w-full px-4 py-2 pr-10 rounded-lg appearance-none focus:outline-none">
+      <option>Choose a voice</option>
+      <option>Voice 1</option>
+      <option>Voice 2</option>
+      <option>Voice 3</option>
+    </select>
+    <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-4 h-4 text-gray-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </div>
+</div>
         </div>
       )}
 
@@ -219,7 +233,7 @@ const AudioData = () => {
                   })}
                 >
                   <input {...getInputProps()} />
-                  <MdDone className="w-12 h-12 text-gray-500" />
+                  <MdOutlineAudiotrack className="w-12 h-12 text-gray-500" />
                 </div>
               </section>
             </div>
